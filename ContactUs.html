@@ -141,6 +141,37 @@
         display: inline;
         margin-right: 10px;
       }
+      @media (min-width: 320px) and (max-width: 1200px) {
+        * {
+          margin: 0;
+          padding: 0;
+        }
+        
+        nav {
+          display: flex;
+          /* flex-wrap: wrap; */
+          flex-direction: column;
+          height: auto;
+          width: 100vw;
+        }
+        nav ul {
+          display: flex;
+          flex-direction: column;
+        }
+        .footer {
+          display: flex;
+          /* flex-wrap: wrap; */
+          flex-direction: column;
+          height: auto;
+          width: 100vw;
+          justify-content: center;
+          align-items: center;
+        }
+        .footer ul {
+          display: flex;
+          flex-direction: column;
+        }
+      }
     </style>
   </head>
   <body>

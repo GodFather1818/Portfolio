@@ -54,6 +54,9 @@
         background-color: rgb(5, 5, 67);
         /* background-color: rgba(17, 16, 16, 0.736); */
         height: 80px;
+        width: 100vw;
+        box-sizing: border-box;
+        flex-wrap: wrap;
       }
 
       nav ul {
@@ -77,6 +80,7 @@
         justify-content: space-around;
         align-items: center;
         margin: 80px 0;
+        flex-wrap: wrap;
       }
 
       .firstSection > div {
@@ -155,6 +159,7 @@
         margin: 70px 0;
         display: flex;
         /* font-weight: bold; */
+        flex-wrap: wrap;
       }
       .secondSection .vertical {
         background: black;
@@ -244,6 +249,7 @@
         background-color: rgba(17, 16, 16, 0.736);
         /* height: 233px; */
         /* display: flex; */
+        width: 100vw;
       }
 
       .footer {
@@ -280,6 +286,116 @@
         margin-right: 10px;
         /* flex-direction: row; */
       }
+      
+      @media (min-width: 320px) and (max-width: 1200px) {
+        * {
+          margin: 0;
+          padding: 0;
+        }
+        
+        nav {
+          display: flex;
+          /* flex-wrap: wrap; */
+          flex-direction: column;
+          height: auto;
+          width: 100vw;
+        }
+        nav ul {
+          display: flex;
+          flex-direction: column;
+        }
+        .firstSection {
+          margin: 0 20px;
+          display: flex;
+          flex-direction: column;
+        }
+        .leftSection {
+          /* background-color: red; */
+          font-size: 20px;
+          /* margin: 70px 0; */
+
+          width: 400px;
+          height: auto;
+          color: whitesmoke;
+        }
+
+        .secondSection {
+          margin: 0 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 480px;
+        }
+
+        .rightSection img {
+          width: 300px;
+          height: 200px;
+          margin-right: 20px;
+        }
+        .secondSection .vertical {
+          background: rgb(6 6 39);
+          width: 93px;
+          margin: 20px 150px;
+          height: 2px;
+          position: relative;
+          left: -200px;
+          display: flex;
+          /* visibility: hidden; */
+          justify-content: center;
+          align-items: center;
+        }
+        .secondSection .box {
+          background: black;
+          width: 0px;
+          height: 80vh;
+          margin: 70px 0;
+          display: flex;
+          /* visibility: hidden; */
+          /* font-weight: bold; */
+          flex-wrap: wrap;
+        }
+        .vertical-desc {
+          visibility: hidden;
+          position: relative;
+          top: 0px;
+          width: 300px;
+          left: 265px;
+          font-weight: bold;
+
+        }
+        .vertical img {
+          position: relative;
+          left: 130px;
+          top: -15px;
+        }
+        .vertical-title {
+          position: relative;
+          top: 0px;
+          left: 165px;
+          width: 300px;
+          font-size: 15px;
+          color: black;
+          height: auto;
+        }
+        .titles {
+          /* margin: 20px 0; */
+          width: 350px;
+        }
+        .footer {
+          display: flex;
+          /* flex-wrap: wrap; */
+          flex-direction: column;
+          height: auto;
+          width: 100vw;
+          justify-content: center;
+          align-items: center;
+        }
+        .footer ul {
+          display: flex;
+          flex-direction: column;
+        }
+      }
     </style>
   </head>
   <body>
@@ -313,16 +429,16 @@
           <img src="fron.png" alt="Web-Developer Image" />
         </div>
       </section>
-      <div class="resume" id="resume" >
+      <div class="resume" id="resume">
         <button type="button" class="btn btn-primary">Download Resume</button>
       </div>
-      
+
       <hr />
       <section class="secondSection">
         <span class="text-gray" style="font-weight: bold"
           >What i have done so far?</span
         >
-        <h1 style="font-weight: bold">Work Experiences</h1>
+        <h1 style="font-weight: bold; margin: 20px 0;">Work Experiences</h1>
         <div class="box">
           <div class="vertical">
             <img class="image-top" src="developer.png" />

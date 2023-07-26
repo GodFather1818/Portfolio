@@ -139,6 +139,79 @@
         display: inline;
         margin-right: 10px;
       }
+      @media (min-width: 320px) and (max-width: 1200px) {
+        * {
+          margin: 0;
+          padding: 0;
+        }
+        
+        nav {
+          display: flex;
+          /* flex-wrap: wrap; */
+          flex-direction: column;
+          height: auto;
+          width: auto;
+        }
+        nav ul {
+          display: flex;
+          flex-direction: column;
+        }
+        .flex-container {
+          display: flex;
+          flex-direction: column;
+        }
+        #introduction {
+          position: relative;
+          margin: 10px 0;
+          font-size: 20px;
+        }
+        #education {
+          position: relative;
+          margin: 30px 0;
+        }
+        #skills {
+          position: relative;
+          margin: 30px 0;
+        }
+        #personal-attributes {
+          position: relative;
+          margin: 30px 0;
+        }
+        .paragraph {
+          margin: 20px 10px;
+          position: relative;
+          top: 10px;
+          width: auto;
+        }
+        .image {
+          margin: 20px 0;
+          position: relative;
+          top: 20px;
+          bottom: 100px;
+        }
+        .second-section {
+          display: flex;
+          flex-direction: column;
+          width: auto;
+          height: auto;
+        }
+        .second-section hr{
+          margin: 50px 0;
+        }
+        .footer {
+          display: flex;
+          /* flex-wrap: wrap; */
+          flex-direction: column;
+          height: auto;
+          width: 100vw;
+          justify-content: center;
+          align-items: center;
+        }
+        .footer ul {
+          display: flex;
+          flex-direction: column;
+        }
+      }
     </style>
   </head>
   <body>
